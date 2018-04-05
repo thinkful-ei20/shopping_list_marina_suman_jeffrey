@@ -27,7 +27,8 @@ $(function() {
 
 
   $('.shopping-list').on('click', '.shopping-item-delete', function(event) {
-    console.log('delete button clicked');
+    //$(this).parent().remove();
+    $(this).closest("li").remove();
   });
 
 
