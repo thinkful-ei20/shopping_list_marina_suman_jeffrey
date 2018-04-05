@@ -22,7 +22,10 @@ $(function() {
   })
 
   $('.shopping-list').on('click', '.shopping-item-toggle', function(event) {
-    console.log('toggle button clicked');
+    $(this).closest('li').children('span').toggleClass('shopping-item__checked');
+    // $(this).parent().children('shopping-item').toggleClass('shopping-item__checked');
+    // console.log($(this).find('.shopping-item'));
+    // .toggleClass('shopping-item__checked');
   });
 
 
