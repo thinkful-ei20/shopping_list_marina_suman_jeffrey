@@ -1,3 +1,5 @@
+'use strict';
+
 $(function() {
   $('#js-shopping-list-form').on('submit', event => {
     event.preventDefault();
@@ -17,8 +19,18 @@ $(function() {
       `;
     $('.js-shopping-list-entry').val('');
     $('.shopping-list').append(html);
-    // console.log(item);
   })
 
-  // console.log('hi');
+  $('.shopping-list').on('click', '.shopping-item-toggle', function(event) {
+    console.log('toggle button clicked');
+  });
+
+
+  $('.shopping-list').on('click', '.shopping-item-delete', function(event) {
+    console.log('delete button clicked');
+  });
+
+
+
+
 });
